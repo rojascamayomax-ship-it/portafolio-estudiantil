@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio virtual estudiantil de Jhordan Camayo Rodriguez, estudiante de Ingeniería de Sistemas.">
+  <title>Jhordan Camayo Rodriguez | Portafolio Estudiantil</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-glow glow-one"></div>
+  <div class="bg-glow glow-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Inicio">
+      <span class="brand-mark">JC</span>
+      <span>
+        <strong>JHORDAN CAMAYO</strong>
+        <small>INGENIERÍA DE SISTEMAS</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#inicio" class="nav-link active">Inicio</a>
+      <a href="#semanas" class="nav-link">Semanas</a>
+      <a href="#resumen" class="nav-link">Resumen</a>
+      <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+    </nav>
+
+    <button class="outline-btn" id="scrollToWeeks">Ver actividades <span>↗</span></button>
+  </header>
+
+  <main id="inicio">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> PORTAFOLIO ACADÉMICO 2026</div>
+        <h1>Mi camino de<br><em>aprendizaje.</em></h1>
+        <div class="student-role">Jhordan Camayo Rodriguez · Estudiante de Ingeniería de Sistemas</div>
+        <p class="hero-text">
+          Un espacio digital para presentar mi proceso académico, organizar mis actividades y conservar las evidencias de aprendizaje desarrolladas durante las cuatro semanas.
+        </p>
+
+        <div class="hero-actions">
+          <button class="primary-btn" id="heroStart">Explorar portafolio <span>→</span></button>
+          <a class="text-btn" href="#resumen"><span class="play">▶</span> Ver resumen</a>
+        </div>
+
+        <div class="mini-stats">
+          <div><strong>04</strong><span>Semanas</span></div>
+          <div><strong>08</strong><span>Actividades</span></div>
+          <div><strong>10</strong><span>Tareas / actividad</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="orbital-core">JC</div>
+        <div class="floating-card card-top"><span>✓</span> Evidencias organizadas</div>
+        <div class="floating-card card-bottom"><strong>4</strong><span>semanas de aprendizaje</span></div>
+      </div>
+    </section>
+
+    <section class="stats-bar section-shell" id="resumen">
+      <div class="stat"><span class="stat-icon">◈</span><div><strong id="totalTasks">0</strong><small>Tareas registradas</small></div></div>
+      <div class="stat"><span class="stat-icon">◌</span><div><strong>08</strong><small>Actividades</small></div></div>
+      <div class="stat"><span class="stat-icon">◇</span><div><strong>04</strong><small>Semanas</small></div></div>
+      <div class="stat"><span class="stat-icon">✦</span><div><strong>100%</strong><small>Organizado</small></div></div>
+    </section>
+
+    <section class="intro section-shell">
+      <div class="section-tag">01 / PORTAFOLIO</div>
+      <div>
+        <h2>Todo mi trabajo,<br><em>en un solo lugar.</em></h2>
+        <p>
+          Cada semana contiene dos actividades. Dentro de cada actividad podrás
+          visualizar las tareas como evidencias en imagen, abrirlas en grande y descargarlas.
+        </p>
+      </div>
+    </section>
+
+    <section class="weeks-section section-shell" id="semanas">
+      <div class="section-heading">
+        <div>
+          <div class="section-tag">02 / SEMANAS</div>
+          <h2>Explora por <em>semana</em></h2>
+        </div>
+        <div class="progress-pill"><span id="progressDot"></span><span id="progressText">0 / 80 tareas</span></div>
+      </div>
+
+      <div class="week-tabs" id="weekTabs" role="tablist" aria-label="Semanas"></div>
+      <div class="week-panels" id="weekPanels"></div>
+    </section>
+
+    <section class="about section-shell" id="sobre-mi">
+      <div class="about-visual">
+        <div class="about-circle"><span>ESTUDIAR</span><strong>+</strong><span>CREAR</span></div>
+      </div>
+      <div>
+        <div class="section-tag">03 / SOBRE MÍ</div>
+        <h2>Jhordan Camayo<br><em>Rodriguez.</em></h2>
+        <p>
+          Soy estudiante de Ingeniería de Sistemas y este portafolio reúne mi proceso académico,
+          mis actividades y las evidencias de cada semana. La estructura está pensada para navegar
+          por pestañas, revisar cada actividad de forma independiente y descargar cada tarea.
+        </p>
+        <div class="student-data">
+          <div><span>PROGRAMA</span><strong>Ingeniería de Sistemas</strong></div>
+          <div><span>ESTUDIANTE</span><strong>Jhordan Camayo Rodriguez</strong></div>
+          <div><span>PERIODO</span><strong>2026</strong></div>
+        </div>
+        <div class="feature-list">
+          <div><span>01</span><p><b>Organización</b><br>Semanas y actividades separadas.</p></div>
+          <div><span>02</span><p><b>Evidencias</b><br>Tareas presentadas en imagen.</p></div>
+          <div><span>03</span><p><b>Acceso rápido</b><br>Vista previa y descarga.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta section-shell">
+      <div>
+        <div class="section-tag">LISTO PARA REVISAR</div>
+        <h2>Tu trabajo merece<br><em>una buena presentación.</em></h2>
+      </div>
+      <button class="primary-btn" id="ctaStart">Ir a mis actividades <span>→</span></button>
+    </section>
+  </main>
+
+  <footer class="footer section-shell">
+    <div class="footer-brand">
+      <span class="brand-mark">JC</span>
+      <div><strong>JHORDAN CAMAYO</strong><small>INGENIERÍA DE SISTEMAS</small></div>
+    </div>
+    <p>Jhordan Camayo Rodriguez · Ingeniería de Sistemas · 2026</p>
+    <p>Hecho con HTML · CSS · JavaScript</p>
+  </footer>
+
+  <div class="modal" id="taskModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-window" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-head">
+        <div>
+          <span class="modal-kicker" id="modalKicker">TAREA</span>
+          <h3 id="modalTitle">Tarea</h3>
+        </div>
+        <button class="close-btn" data-close-modal aria-label="Cerrar">×</button>
+      </div>
+      <div class="modal-image-wrap">
+        <img id="modalImage" src="" alt="Evidencia de tarea">
+        <div class="image-fallback" id="imageFallback">
+          <span>⌁</span>
+          <strong>No se encontró la imagen</strong>
+          <small>Revisa el nombre y la carpeta de la tarea.</small>
+        </div>
+      </div>
+      <div class="modal-foot">
+        <span id="modalPath">tarea1.jpg</span>
+        <div class="modal-actions">
+          <button class="secondary-btn" data-close-modal>Cerrar</button>
+          <a class="primary-btn download-btn" id="downloadBtn" href="#" download>Descargar <span>↓</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
